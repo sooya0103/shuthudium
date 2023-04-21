@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.app">
+    <!-- テスト　今後の開発で適宜追加＆削除 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:name=".MyGlobals"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.App">
+        <activity android:name=".achieve.AchieveYearActivity"/>
+        <activity android:name=".achieve.AchieveMonthActivity" />
+        <activity android:name=".achieve.AchieveWeekActivity" />
+        <activity android:name=".settings.HowTo" />
+        <activity android:name=".settings.Settings2" />
+        <activity android:name=".settings.Settings1" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- ブロードキャストレシーバー登録 -->
+        <receiver
+            android:name=".alarm.AlarmNotification"
+            android:process=":remote" />
+    </application>
+
+</manifest>

@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">App</string>
+    <string name="notification">通知</string>
+    <string name="notification_sound">サウンド</string>
+    <string name="Encourage_study">勉強に戻りましょう</string>
+    <string name="Encourage_text">スマホを触り始めて %1$d分 経ちました。</string>
+
+    <string name="start">Start</string>
+    <string name="cancel">Cancel</string>
+
+    <!--    フラグメントに使うタイトル名-->
+    <string name="title_home">Watch</string>
+    <string name="title_dashboard">Graph</string>
+    <string name="title_notifications">Menu</string>
+
+    <!--    ストップウォッチ用-->
+    <string name="stop">Stop</string>
+    <string name="zero">"00:00.0"</string>
+
+
+</resources>
